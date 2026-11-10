@@ -1,0 +1,17 @@
+{
+  "name": "AuditLine",
+  "family": "America V2",
+  "tagline": "Every official warning, and what the publisher says happened next: federal inspector-general recommendations, one page each, with the publisher's own status and a dated history.",
+  "repo": "theguysaccount/america-v2-civic-evidence-network",
+  "default_url": "https://theguysaccount.github.io/america-v2-civic-evidence-network",
+  "indexable": false,
+  "original_url": "https://www.americav2.org/spokes/audit-line",
+  "user_agent": "AuditLineStatic/1.0 (+https://github.com/theguysaccount/america-v2-civic-evidence-network)",
+  "robots_token": "AuditLineStatic",
+  "max_bytes": 15000000,
+  "min_quality": 0.7,
+  "max_shrink": 0.3,
+  "min_recommendations_to_publish": 500,
+  "stale_after_days": 16,
+  "min_hours_between_reads": 20
+}
