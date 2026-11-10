@@ -1,0 +1,16 @@
+# By hand: ask each official source for its export once, from a GitHub runner, and print how it answers.
+name: Probe sources
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python3 -m auditline.probe
