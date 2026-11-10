@@ -23,6 +23,22 @@ SOURCES = [
 
 
 def main():
+    import socket
+    import time
+    for host in ("oig.hhs.gov",):
+        try:
+            print(host, "resolves to", sorted({a[4][0] for a in socket.getaddrinfo(host, 443)}))
+        except Exception as e:
+            print(host, "did not resolve:", e)
+    for attempt in range(2):
+        if attempt:
+            time.sleep(20)
+        once()
+        print("---")
+    return 0
+
+
+def once():
     for name, url in SOURCES:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/csv,text/html;q=0.9,text/plain;q=0.8,*/*;q=0.5"})
         try:
@@ -32,8 +48,7 @@ def main():
         except urllib.error.HTTPError as e:
             print(f"{e.code}  {e.headers.get('Content-Type', '?'):40.40}  {'refused':>15}  {name}")
         except Exception as e:
-            print(f"---  {type(e).__name__:40.40}  {'no answer':>15}  {name}")
-    return 0
+            print(f"---  {type(e).__name__:40.40}  {'no answer':>15}  {name}  ({str(getattr(e, 'reason', e))[:120]})")
 
 
 if __name__ == "__main__":
