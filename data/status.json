@@ -2,35 +2,35 @@
  "publishers": {
   "dot-oig": {
    "bytes": 1246807,
-   "checked_at": "2026-11-10T09:44:35Z",
+   "checked_at": "2026-11-10T10:21:52Z",
    "last_changed": "2026-11-10T09:28:47Z",
    "last_modified": "",
    "links": {
-    "checked_at": "2026-11-10T09:44:35Z",
+    "checked_at": "2026-11-10T10:21:52Z",
     "report_link": "ok",
     "tracker": "ok"
    },
    "note": "3,433 recommendations read; 0 changes recorded",
    "outcome": "ok",
    "refused_since": "",
-   "retrieved_at": "2026-11-10T09:44:35Z",
+   "retrieved_at": "2026-11-10T10:21:52Z",
    "rows": 3433,
    "sha256": "20d18b210f506504812e0c8822e4940ca39cc6a0ae148448fa1ce88fa3384377"
   },
   "hhs-oig": {
    "bytes": 2832125,
-   "checked_at": "2026-11-10T09:44:35Z",
+   "checked_at": "2026-11-10T10:21:52Z",
    "last_changed": "2026-11-10T09:28:47Z",
    "last_modified": "",
    "links": {
-    "checked_at": "2026-11-10T09:44:35Z",
+    "checked_at": "2026-11-10T10:21:52Z",
     "report_link": "ok",
     "tracker": "ok"
    },
    "note": "4,658 recommendations read; 0 changes recorded",
    "outcome": "ok",
    "refused_since": "",
-   "retrieved_at": "2026-11-10T09:44:35Z",
+   "retrieved_at": "2026-11-10T10:21:52Z",
    "rows": 4658,
    "sha256": "91c36d2cbbe3c3df1f2652a5d0c12756ad81dc71b06d46de32f424b8d51e3be9"
   }
@@ -41,6 +41,6 @@
    "Oversight.gov": "refuses automated requests (HTTP 406)",
    "State OIG": "refuses automated requests (HTTP 403)"
   },
-  "checked_at": "2026-11-10T09:44:35Z"
+  "checked_at": "2026-11-10T10:21:52Z"
  }
 }
