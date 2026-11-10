@@ -38,6 +38,9 @@ has to fire at a set time.
   differences between files, and the changes page shows them as such.
 - **Size.** About 8,200 pages and 127 MB today; GitHub Pages allows 1 GB. Each new publisher of similar size adds
   about 60 MB.
+- **A deploy that times out.** On 2026-11-10 one deploy sat in "syncing_files" for ten minutes and timed out; the
+  previous site stayed live and a re-run took under a minute. The deploy job now offers the same build a second time
+  before failing. If both attempts fail, re-run the failed job from the Actions tab.
 
 ## Manual levers
 - **Run now:** Actions → Refresh and deploy → Run workflow. Untick "refresh" to only rebuild; tick "force" to ask
