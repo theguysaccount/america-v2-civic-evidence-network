@@ -12,7 +12,6 @@ on:
   schedule:
     - cron: "19 6 * * 2"    # Tuesday 06:19 UTC
     - cron: "43 6 * * 5"    # Friday 06:43 UTC: a second read each week, and the backstop if Tuesday's run was skipped
-    - cron: "11,31,51 * 10,11 11 *"   # TEMPORARY (fires only on 10 and 11 November): proves the schedule trigger; removed after one passing run
   push:
     branches: [main]
     paths-ignore: ["data/**", "**.md", "docs/**", "LICENSE", ".github/ISSUE_TEMPLATE/**"]

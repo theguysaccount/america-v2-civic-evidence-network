@@ -10,6 +10,7 @@ americav2.org is live and unchanged).
 - One page per responsible office (32), per publisher, an open-by-agency table, search, a changes page, CSV/JSON
   mirror, Atom feeds (site and per office), an embeddable open count per office.
 - Twice-weekly read with change detection, source-link check, weekly self-test, keep-alive. 50 tests.
+  Both scheduled workflows have passed on GitHub's own schedule trigger (first on 2026-11-10), not only by hand.
 
 ## What the original has that this copy does not
 - GAO and State OIG records. Both sites refuse automated requests (HTTP 403), from this Mac and from GitHub's

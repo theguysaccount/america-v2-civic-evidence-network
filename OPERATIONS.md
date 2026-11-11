@@ -21,7 +21,9 @@ run calls `.github/scripts/keepalive.sh` (re-enables workflows GitHub paused for
 quiet days).
 
 **GitHub skips scheduled runs on this account.** Two read slots a week and the self-test's stale check mean no run
-has to fire at a set time.
+has to fire at a set time. The times in the table are the earliest a run can start, and a new or changed schedule can
+take hours to start at all: on 2026-11-10 the first scheduled runs of both workflows started about eight hours after
+their schedules were last pushed. Both passed.
 
 ## What to watch
 - **Actions → Refresh and deploy.** Red means the site was not updated; the previous site is still live. The failing
