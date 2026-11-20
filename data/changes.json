@@ -14,6 +14,18 @@
      "text": 294
     }
    }
+  },
+  {
+   "at": "2026-11-20T15:47:07Z",
+   "publishers": {
+    "dot-oig": {
+     "added": 3,
+     "closed": 10,
+     "status": 10,
+     "text": 1
+    },
+    "hhs-oig": {}
+   }
   }
  ]
 }
